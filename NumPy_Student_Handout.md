@@ -36,6 +36,39 @@ Open your own repository in VS Code, select a Python notebook kernel, and run th
 
 Assignment connection  Parts 1 and 3 use array creation and elementwise calculations.
 
+# What NumPy is used for
+
+NumPy stands for Numerical Python. It is a Python library for storing and calculating with numeric data. In data science, you often need to apply the same calculation to many values. NumPy arrays make that work convenient and efficient, especially for larger numeric datasets.
+
+## Common uses
+
+Summarize data  Find totals, averages, minimums, and maximums in measurements, sales records, or experiment results.
+
+Transform measurements  Convert temperatures or distances, calculate percentage changes, or adjust many prices at once.
+
+Find values that meet a condition  Select unusually high readings, values within a range, or records that need closer inspection.
+
+Prepare numeric data for analysis  Arrange numbers into rows and columns and perform calculations before creating charts or building models.
+
+## A practical example
+
+Imagine a store with thousands of product prices. To estimate a five percent increase, you can multiply the entire price array by 1.05. Each product receives the same calculation, and the result can be stored separately for comparison.
+
+```python
+# Example prices for a different store.
+old_prices = np.array([10.0, 20.0, 30.0])
+new_prices = old_prices * 1.05
+print(new_prices)  # [10.5 21.  31.5]
+```
+
+## How it connects to other tools
+
+NumPy focuses on numeric arrays. pandas adds labeled tables for exploring and cleaning datasets. Matplotlib creates charts. These tools often work together: calculate with arrays, organize results in tables, and visualize the findings.
+
+## Why you are learning it
+
+This assignment builds the foundation for working with numerical data. Your visitor calculations practice summarizing and filtering, while the sales table shows how one array can organize several weeks and products.
+
 # Create and inspect arrays
 
 The properties below describe the structure of an array. They do not change its values.
